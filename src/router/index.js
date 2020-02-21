@@ -16,6 +16,10 @@ const routers = [
     redirect: '/home'
   },
   {
+    path: '/home',
+    component: Home
+  },
+  {
     path: '/category',
     component: Category
   },
