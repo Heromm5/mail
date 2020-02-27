@@ -41,6 +41,7 @@ import BackTop from "components/content/backTop/BackTop";
 
 import { getHomeMultidata, getHomeGoods } from "network/home";
 import { debounce } from "common/utils";
+import {itemListenerMixin} from "common/mixin"
 
 export default {
   components: {
@@ -53,6 +54,7 @@ export default {
     Scroll,
     BackTop
   },
+  mixins: [itemListenerMixin],
   data() {
     return {
       banners: [],
